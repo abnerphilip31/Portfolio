@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abner Philip | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        :root {
+            --bg: #0a0b10;
+            --glass: rgba(255, 255, 255, 0.05);
+            --accent: #00f2ff; /* Neon Cyan */
+            --accent-2: #7000ff; /* Electric Purple */
+            --text: #ffffff;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        /* Animated Background Gradient */
+        .bg-gradient {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at 50% 50%, #1a1b25 0%, #0a0b10 100%);
+            z-index: -1;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(45deg, rgba(0,242,255,0.05), rgba(112,0,255,0.05));
+        }
+
+        .hero-title {
+            font-size: 5rem;
+            margin: 0;
+            background: linear-gradient(to right, var(--accent), var(--accent-2));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 900;
+            letter-spacing: -2px;
+        }
+
+        .status-pill {
+            background: var(--glass);
+            border: 1px solid var(--accent);
+            padding: 8px 20px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .container { max-width: 1100px; margin: auto; padding: 4rem 2rem; }
+
+        .section-header {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            border-bottom: 2px solid var(--accent-2);
+            display: inline-block;
+        }
+
+        /* Glass Cards */
+        .card {
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 20px;
+            transition: transform 0.3s ease, border 0.3s ease;
+            margin-bottom: 2rem;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border: 1px solid var(--accent);
+        }
+
+        /* Technical Skill Tags */
+        .skill-tag {
+            display: inline-block;
+            background: var(--accent-2);
+            padding: 5px 15px;
+            border-radius: 5px;
+            margin: 5px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .money-badge {
+            color: #2ecc71;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        /* Funky Button */
+        .btn {
+            margin-top: 30px;
+            padding: 15px 40px;
+            background: transparent;
+            color: var(--accent);
+            border: 2px solid var(--accent);
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: var(--accent);
+            color: var(--bg);
+            box-shadow: 0 0 20px var(--accent);
+        }
+    </style>
+</head>
+<body>
+
+<div class="bg-gradient"></div>
+
+<header class="animate__animated animate__fadeIn">
+    <div class="status-pill">Currently Designing @ Caspro Solutions</div>
+    <h1 class="hero-title">ABNER PHILIP</h1>
+    <p style="font-size: 1.5rem; max-width: 600px;">Mechatronics Engineer blending **Hardware** and **Software** to build the future of Automation.</p>
+    <a href="mailto:abnerphilip31@gmail.com" class="btn">HIRE ME</a>
+</header>
+
+<div class="container">
+    
+    <h2 class="section-header animate__animated animate__fadeInLeft">High-Impact Work</h2>
+    <div class="grid">
+        <div class="card animate__animated animate__zoomIn">
+            <span class="money-badge">₹15,00,000 GRANT</span>
+            <h3>Incubator & Health Monitor</h3>
+            <p>Awarded by MSME for pioneering neonatal health technology.</p>
+            <p>🏆 Top Project International - VISAI Chennai.</p>
+        </div>
+        
+        <div class="card animate__animated animate__zoomIn" style="animation-delay: 0.2s;">
+            <h3>iDEX Defense Project</h3>
+            <p>Developing automatic actuation devices for reserve parachutes.</p>
+        </div>
+    </div>
+
+    <h2 class="section-header">The Technical Arsenal</h2>
+    <div class="card" style="text-align: center;">
+        <div class="skill-tag">Creo</div>
+        <div class="skill-tag">Auto CAD</div>
+        <div class="skill-tag">CATIA V5</div>
+        <div class="skill-tag">Robotics Analysis</div>
+        <div class="skill-tag">IoT</div>
+        <div class="skill-tag">Cyber Security</div>
+        <p style="margin-top: 20px;">Currently creating 3D engine block models with PTC Creo.</p>
+    </div>
+
+    <h2 class="section-header">Beyond the Desk</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>🏎️ Go-Kart Racing</h3>
+            <p>Overall Champion (2021-2023) at Kari Motor Ways, Coimbatore.</p>
+        </div>
+        <div class="card">
+            <h3>🚁 Drone Tech</h3>
+            <p>2 Years in the specialized Drone Lab and team.</p>
+        </div>
+    </div>
+
+</div>
+
+<footer style="padding: 50px; text-align: center; opacity: 0.5;">
+    ABNER PHILIP | 2026 | SALEM - BANGALORE
+</footer>
+
+</body>
+</html>
